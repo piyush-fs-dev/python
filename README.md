@@ -35,4 +35,26 @@ Python code -> Encoding Unicode -> Binary Code
     * print("Hello", "you!", sep=", ") -> Hello, you!
     * output formatting
       * print("I like {0} more than {1}.format("oranges", "grapes")) -> I like oranges more than grapes
-    * 
+
+
+##### Scopes
+
+_(1->4 , inner-layer -> outer-layer)_
+
+1. Local Scope
+2. Enclosing Scope
+3. Global Scope
+4. Built-in Scope
+
+
+* example 
+```python
+#Built in scope()def
+def outer():
+    #Enclosed Scope
+    b = 2
+    def inner():
+        # Local scope
+        c = 3
+```
+
